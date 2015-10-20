@@ -1,0 +1,24 @@
+body {
+  background-color: #eeeeee;
+  font-family: sans;
+  font-size: 18px;
+}
+
+.info {
+  width: 440px;
+  height: auto;
+  background-color: white;
+  line-height: 1.5em;
+  text-align: left;
+  margin: auto;
+  padding: 40px 80px 20px;
+  box-shadow: 0 0 5px grey;
+}
+
+h3 {
+  text-align: center;
+}
+
+.avatar {
+  text-align: center;
+}
