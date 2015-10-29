@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #eeeeee;
+  font-family: Tahoma;
+}
+.wrapper {
+  width: 1007px;
+  background-color: white;
+  margin: auto;
+  padding-left: 45px;
+  padding-top: 50px;
+  box-shadow: 0 0 5px grey;
+}
+.header {
+  margin-bottom: 40px;
+}
+.logo-img {
+  width: 145px;
+  height: 40px;
+}
+
+
+/*HEADER, TOP-MENU*/
+.top-menu {
+  margin-top: 40px;
+  width: 966px;
+  position: relative;
+  overflow: hidden;
+  font-size: 10px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d5d5d+0,454444+100 */
+  background: #5d5d5d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5d5d5d 0%, #454444 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d5d5d), color-stop(100%,#454444)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #5d5d5d 0%,#454444 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #5d5d5d 0%,#454444 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #5d5d5d 0%,#454444 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #5d5d5d 0%,#454444 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#454444',GradientType=0 ); /* IE6-9 */
+}
+.top-menu li {
+    /*display: inline; /*Отображать как строчный элемент*/
+    float: left;
+    list-style: none;
+}
+.top-menu a {
+  padding: 0 25px;
+  display: block;
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 15px;
+  border-left: 1px solid transparent; /*чтобы менюшка не прыгала при hover*/
+  border-right: 1px solid transparent; /*чтобы менюшка не прыгала при hover*/
+}
+.top-menu a:hover {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a4a4a+0,2e2e2e+100 */
+background: #4a4a4a; /* Old browsers */
+background: -moz-linear-gradient(top,  #4a4a4a 0%, #2e2e2e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4a4a4a), color-stop(100%,#2e2e2e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4a4a4a 0%,#2e2e2e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4a4a4a 0%,#2e2e2e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4a4a4a 0%,#2e2e2e 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4a4a4a 0%,#2e2e2e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*---------CONTENT*/
+.content {
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 966px;
+}
+
+
+/*---------SIDEBAR*/
+.side-box {
+  float: left;
+  width: 240px;
+  height: 240px;
+}
+.sidebar {
+  font-size: 12px;
+  list-style: none; /*убираем маркеры*/
+  border: 1px solid #c8c8c8;
+}
+.sidebar li:first-child { /*Псевдоселектор убирает первую верхнюю полоску бордера*/
+  border: none;
+}
+.sidebar li {
+  border-top: 1px solid #c8c8c8;
+}
+.sidebar a {
+  display: block; /*позоляет видеть ссылку (текст) как кнопку (блок)*/
+  padding: 0 25px;
+  line-height: 37px;
+  color: #656363;
+  text-decoration: none; /*убираем подчеркивания*/
+}
+.sidebar a:hover {
+  padding-left: 35px;
+  background: #eeeeee;
+  transition: 0.1s all; /*задержка действия, "all" - какие значения замедлять*/
+}
+
+
+/*---------PRODUCT INFO*/
+.product {
+  float: right;
+  width: 675px;
+  /*height: 400px;*/
+}
+.product-img {
+  border: 1px solid #c8c8c8;
+  text-align: center; /*выравнивание злоебучей картинки по центру*/
+  padding: 35px 0px;
+}
+.product-description {
+  padding: 30px 22px 0 22px;
+  line-height: 21px;
+  font-size: 13px;
+  color: #2c2c2c;
+}
+
+/*--------------FOOTER*/
+.footer{
+  padding: 50px 0;
+  /*background-color: #cccccc;
+  width: 966px;
+  height: 40px;*/
+}
+.footer-list {
+  width: 960px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e1e1e1;
+}
+.footer-list li {
+float: left;
+list-style: none;
+line-height: 40px;
+font-size: 13px;
+}
+.footer-list a {
+display: block;
+padding-right: 50px;
+padding-left: 25px;
+color: #2c2c2c;
+text-decoration: none;
+}
+.footer-list a:hover {
+text-decoration: underline;
+}
+.footer-list .copyright {
+float: right;
+padding-right: 30px;
+}
