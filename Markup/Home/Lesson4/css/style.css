@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background-repeat:repeat-x;
+  background-image: url("../img/body-pattern.jpg");
+  background-color: #0c73a0;
+}
+.wrapper{
+  width: 1000px;
+  /*height: 991px;*/
+  /*position: relative;*/
+  overflow: auto; /*размер wrapper по контенту*/
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.68);
+  -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.68);
+  box-shadow: 0px -1px 8px 1px rgba(0,0,0,0.68);
+  border-bottom: 3px solid #031d28;
+}
+
+/*HEADER*/
+.header{
+  /*position: relative;*/
+  /*overflow: auto; размер wrapper по контенту*/
+  height: 415px; /*узнать с хуя ли без этого значения между хедером и меню есть 4px отступа*/
+}
+.logo{
+  width: 283px;
+  height: 164px;
+  float:left;
+  margin: 11px 0 0 28px;
+  overflow: hidden; /*Отображается только область внутри элемента, остальное будет скрыто*/
+}
+/*CONTACTS*/
+.contacts{
+margin: 10px 36px 0 0;
+text-align: left;
+color: #2190ae;
+font-size: 12px;
+float: right;
+display: inline;
+line-height: 18px; /*междустрочные интервалы*/
+}
+.top-img{
+  width: 1000px;
+  height: 237px;
+  border-top: 1px solid #128aa7;
+  border-bottom: 1px solid #128aa7;
+  overflow: hidden;
+}
+
+
+
+
+/*TOP MENU with COUNTRY FLAGS*/
+.country-menu{
+  list-style-type: none; /*убираем маркеры списка*/
+  float: right; /*плывем вправо, но хуяк - а там contacts уже плавают*/
+  clear: right; /*флоат right, значит зачищаем right и обплываем contacts*/
+  margin: 20px 36px 0 0;
+}
+.country-menu li {
+    display: inline-block; /*делаем меню горизонтальной и задаем высоту блоку по контенту, без этой опции высота - ноль, ну в общем, пока что  не раздуплился как оно работает*/
+  	border-radius: 10%; /*Красивый ободок вокруг картинки как работает - хз*/
+  	transition: background 0.2s; /*можно не писать нолик, а просто поставить точку и десятые*/
+    padding: 3px 5px; /*здесь задаем подсвечиваемюу рамку, а отступ можно и марджином задать */
+}
+.country-menu li:hover{
+  background-color: #128aa7; /*задаем цвет фона при hover*/
+}                            /*цвет шрифта задаем для ссылки! Здесь не будет работать!*/
+.country-menu a {
+  color: #128aa7;
+  font-size: 10px;
+  display: block;
+}
+.country-menu a:hover{
+  color: white; /*задаем цвет шрифта при hover*/
+  text-decoration: none;
+}
+.country-menu img {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.country-menu span{
+  text-align: center;
+  display: block;
+}
+
+
+
+
+
+
+/*MAIN TOP MENU*/
+#navigation{
+  height: 28px;
+  background-color: #323232;
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75);
+  border-top: 1px solid #cacbcb;
+  border-bottom: 1px solid black;
+  position: relative; /*нужно для работы z-index*/
+  z-index: 3; /*делаем слой меню выше слоев боковых панелей*/
+}
+#navigation ul{
+  list-style: none;
+}
+#navigation ul li{
+  float: left;
+  position: relative;
+}
+#navigation ul li a{ /*как выравнять блок по ширине по центру???*/
+  text-decoration: none;
+  color: white;
+  line-height: 28px;
+  font-size: 14px;
+  padding: 0 34px;
+  height: 28px;
+}
+#navigation ul li a:hover{
+  text-decoration: underline;
+}
+#navigation .dropdown{
+  position: absolute;
+  /*top: 100%;*/
+  background-color: #323232;
+  display: none;
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75);
+  border-top: 1px solid black;
+}
+#navigation .dropdown li {
+  width: 100%;
+}
+#navigation li:hover .dropdown{
+  display: block;
+}
+
+
+
+/*SIDEBAR*/
+.sidebar{
+  float: left;
+  width: 208px;
+  background-color: #edeef0;
+  z-index: 1;
+}
+.sidebar h2 {
+  font-size: 18px;
+  color: #424c43;
+  text-align: center;
+  padding-top: 9px;
+}
+.sidebar p {
+  color: #424c43;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+}
+/*CONTENT*/
+.content{
+background-color: #fff;
+}
+
+/*NEWS*/
+.news{
+  float: right;
+  width: 208px;
+  background-color: #edeef0;
+  width: 208px;
+  z-index: 1;
+}
+.news h2{
+  font-size: 18px;
+  color: #424c43;
+  text-align: center;
+  padding-top: 9px;
+}
+.news p{
+  font-size: 14px;
+  color: #424c43;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+}
+/*FOOTER*/
+.footer{
+  text-align: center;
+  background-color: transparent;
+  line-height: 30px;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+}
