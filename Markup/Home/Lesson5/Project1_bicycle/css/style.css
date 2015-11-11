@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue Regular";
+}
+.header{
+  background-color: #074c89;
+  background-image: url("../img/header.jpg");
+  background-repeat: repeat-x;
+  height: 36px;
+}
+.navigation{
+  position: absolute;
+  right: 370px;
+}
+.navigation li{
+  list-style: none;
+  float: left;
+
+}
+.navigation a{
+  text-decoration: none;
+  color: #60b5ed;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 36px;
+  display: block;
+  padding: 0 13px;
+}
+.navigation a:hover{
+  color: white;
+  background-color: #4eabda;
+  display: block;
+}
+
+/*.navigation li:after{
+  border-right: 1px solid #56a2dc;
+  height: 25px;
+}*/
+
+.vertical-line{
+  border-right: 1px solid #56a2dc;
+  top: 5px;
+  line-height: 26px;
+  position: absolute;
+  right: 365px;
+}
+.welcome{
+  font-size: 14px;
+  font-weight: 100;
+}
+.welcome span{
+color: white;
+}
+.welcome a{
+  color: white;
+}
+.minhas{
+  line-height: 36px;
+  position: absolute;
+  right: 230px;
+}
+.minhas img{
+  position: absolute;
+  top: 7px;
+  right: 100px;
+}
+.ola{
+  height: 36px;
+  width: 190px;
+  line-height: 36px;
+  text-align: center;
+  /*background-color: #317ec6;*/
+  line-height: 36px;
+  position: absolute;
+  right: 20px;
+  /*background: #51b1dc;*/
+  background: -moz-linear-gradient(top,  #51b1dc 0%, #2e7ac4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#51b1dc), color-stop(100%,#2e7ac4));
+  background: -webkit-linear-gradient(top,  #51b1dc 0%,#2e7ac4 100%);
+  background: -o-linear-gradient(top,  #51b1dc 0%,#2e7ac4 100%);
+  background: -ms-linear-gradient(top,  #51b1dc 0%,#2e7ac4 100%);
+  background: linear-gradient(to bottom,  #51b1dc 0%,#2e7ac4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2e7ac4',GradientType=0 );
+}
+.ola a:hover{
+  color: #19FFFF;
+}
+
+/*<!-- LOGIN-BOX -->*/
+.wrapper{ /*как сделать картинку по центру безмерного body??!!!!?*/
+  background-image: url("../img/body.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+/*LOGIN BOX*/
+.box{ /*почему-то не совпали значения margin-left - рассчитывая из высоты, должно быть 560\2 = 230, но пришлось ставить 280!!!!!!*/
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 613px;
+  width: 560px;
+  position: absolute;	/* Абсолютное позиционирование */
+  left: 50%; /* Положение слоя от левого края */
+  top: 50%; /* Положение слоя от верхнего края */
+  margin-left: -280px; /* Отступ слева, включает padding и border - половина ширины слоя */
+  margin-top: -306px;	/* Отступ сверху - половина высоты слоя */
+}
+.box-name{
+  text-align: center;
+  color: #fff;
+  line-height: 62px;
+  border-bottom: 1px solid #bac2b5;
+  font-size: 24px;
+}
+/*OU*/
+.OU {
+  margin-top: 30px;
+  /*margin-bottom: 30px;*/
+  text-align: center;
+}
+.OU span {
+  font-size: 14px;
+  color: #999;
+}
+.OU:before,
+.OU:after {
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 123px;
+	height: 1px;
+	vertical-align: middle;
+	background: #666; /*как бы верхний цвет полоски*/
+	background-clip: content-box;
+	border-bottom: 1px solid #000; /*как бы нижний цвет полоски*/
+	}
+button:focus{ /*чтобы не было обводки когда кнопка активна*/
+  outline: none;
+}
+/*FaceBook*/
+
+.facebook{
+  background: url("../img/fb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 276px;
+  margin-top: 32px;
+  position: relative;
+  top: 26px;
+  left: 142px;
+  border: none;
+}
+.facebook:hover{
+  background: url("../img/fb2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+/*input register information*/
+.reg-text{
+  text-align: center;
+  border: none;
+}
+input[type=text], [type=password]{
+  width: 240px;
+  height: 35px;
+  font-size: 14px;
+  margin-top: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 0 20px;
+}
+input[type=password]:-ms-reveal{
+  display: none;
+}
+
+input:focus{
+  background-color: #003c70;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(47,123,197,0.77);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(47,123,197,0.77);
+  box-shadow: 0px 0px 10px 3px rgba(47,123,197,0.77);
+/*
+  -webkit-box-shadow: inset 0px 1px 5px 2px rgba(0,60,117,1);
+  -moz-box-shadow: inset 0px 1px 5px 2px rgba(0,60,117,1);
+  box-shadow: inset 0px 1px 5px 2px rgba(0,60,117,1);*/
+}
+.checkbox{
+  margin: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.create-account{
+  position: relative;
+  left: 205px;
+  color: #fff;
+  font-size: 14px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  border: 1px solid #4ec1e3;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  /*box-sizing: border-box;*/
+  background: #50aedb;
+  background: -moz-linear-gradient(top,  #50aedb 0%, #2e7ac4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#50aedb), color-stop(100%,#2e7ac4));
+  background: -webkit-linear-gradient(top,  #50aedb 0%,#2e7ac4 100%);
+  background: -o-linear-gradient(top,  #50aedb 0%,#2e7ac4 100%);
+  background: -ms-linear-gradient(top,  #50aedb 0%,#2e7ac4 100%);
+  background: linear-gradient(to bottom,  #50aedb 0%,#2e7ac4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50aedb', endColorstr='#2e7ac4',GradientType=0 );
+}
+.create-account:hover{
+  cursor: pointer;
+  background: #3da7d8;
+  background: -moz-linear-gradient(top,  #3da7d8 0%, #236ebf 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3da7d8), color-stop(100%,#236ebf));
+  background: -webkit-linear-gradient(top,  #3da7d8 0%,#236ebf 100%);
+  background: -o-linear-gradient(top,  #3da7d8 0%,#236ebf 100%);
+  background: -ms-linear-gradient(top,  #3da7d8 0%,#236ebf 100%);
+  background: linear-gradient(to bottom,  #3da7d8 0%,#236ebf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da7d8', endColorstr='#236ebf',GradientType=0 );
+
+}
+.terms{
+  color: #fff;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+}
