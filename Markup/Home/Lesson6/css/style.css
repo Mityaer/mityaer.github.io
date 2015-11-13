@@ -1,0 +1,501 @@
+
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lucida Sans Regular';
+    src: url('../fonts/lucida_sans_regular-webfont.eot');
+    src: url('../fonts/lucida_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lucida_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_regular-webfont.woff') format('woff'),
+         url('../fonts/lucida_sans_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans Regular", Arial, sans-serif;
+}
+.wrapper{
+  margin: 0 auto; /*ровняем по горизонтали*/
+  width: 907px;
+  /*overflow: auto; размер wrapper по контенту*/
+}
+.header{
+  /*overflow: auto; размер header по контенту*/
+  position: relative; /*делаем зависимыми все объекты со свойством position от header*/
+}
+.top-menu{
+  width: 907px;
+  height: 55px;
+  position: relative;
+}
+.phone-img{
+  position: absolute;
+  top: 22px;
+  left: 7px;
+}
+.phone-numbers{
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  left: 32px;
+  top: 22px;
+  color: #5e696d;
+}
+.login{
+  background-image: -moz-linear-gradient(top, #1F6685 0%, #0C3357 100%);
+  background-image: -o-linear-gradient(top, #1F6685 0%, #0C3357 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1F6685), color-stop(100, #0C3357));
+  box-shadow:0px 3px 5px #969696;
+  border-radius: 3px;
+  position: absolute;
+  width: 495px;
+  height: 26px;
+  left: 315px;
+  top: 19px;
+}
+.login img{
+  position: absolute;
+  left: 4px;
+}
+.login-form{
+  /*display: inline-block;*/
+  position: absolute;
+  left:25px;
+  top: 1px;
+}
+.login-form input{
+  width: 110px;
+  color: #97a2a6;
+  padding-left: 4px;
+}
+.login-links{
+  position: absolute;
+  left: 270px;
+  line-height: 24px;
+}
+.login-links a{
+font-size: 11px;
+text-decoration: none;
+color: #fff;
+}
+.login-links a:hover{
+  text-decoration: underline;
+}
+.login-links a:last-child{
+  text-decoration: underline;
+  margin-left: 20px;
+  color: #bfbfbf;
+}
+.login-links a:last-child:hover{
+  text-decoration: none;
+}
+.login-links span {
+  text-decoration: none;
+  color: #fff;
+}
+.mini-navigation{
+  padding: 0 10px;
+  position: absolute;
+  right: 14px;
+  top: 21px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  box-shadow:0px 3px 5px #969696;
+}
+
+/*Top navigation menu */
+.navigation{    /*этот блок для того, чтобы выровнять менюшку не позишином а флоатом*/
+  float: left;
+  margin-left: 145px;
+  margin-top: 2px;
+}
+.top-navigation{
+  width: auto;
+  height: 32px;
+  border: 1px solid #2c345a;
+  box-shadow:0px 3px 5px #000;
+  background: -moz-linear-gradient(top, #576068 0%, #000000 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #576068), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #576068 0%, #000000 100%);
+  background: -o-linear-gradient(top, #576068 0%, #000000 100%);
+  background: -ms-linear-gradient(top, #576068 0%, #000000 100%);
+  background: linear-gradient(to bottom, #576068 0%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#576068', endColorstr='#000000', GradientType=0 );
+}
+.top-navigation li{
+  float: left;
+  list-style: none;
+  padding: 0px 10px;
+  line-height: 28px;
+}
+.top-navigation li:hover{
+  border-radius: 15px;
+  transition: all 0.2s;
+  background: #1f6887;
+  background: -moz-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #1f6887), color-stop(100%, #0c3357));
+  background: -webkit-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+  background: -o-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+  background: -ms-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+  background: linear-gradient(to bottom, #1f6887 0%, #0c3357 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6887', endColorstr='#0c3357', GradientType=0 );
+}
+.top-navigation a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.basket{
+  float: right;
+  margin: 5px 20px;
+}
+.basket .product-text{
+  color: #8a9296;
+}
+.basket .counter {
+  color: #0d5a8f;
+}
+.shapes{
+  height: 145px;
+  position: relative;
+}
+.shape-wrapper{
+  height: 162px;
+  width: 907px;
+}
+/*SHAPE-1*/
+.shape-1{
+  width: 412px;
+  height: 132px;
+  border: 1px solid #b8b8b9;
+  border-radius: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 11px;
+  left: 5px;
+  box-shadow:3px 3px 10px gray;
+}
+
+.header-shape-1{ /*для центрирования слов "Поиск по автомобилю" */
+  width: 412px;
+  text-align: center;
+}
+.shape-1 .left{ /*надпись "диски"*/
+color: #154468;
+font-size: 10px;
+font-weight: 900;
+float: left;
+padding-top: 6px;
+padding-left: 17px;
+}
+.shape-1 .right{ /*надпись "Шины"*/
+  color: #154468;
+  font-size: 10px;
+  float: right;
+  font-weight: 900;
+  padding-top: 6px;
+  padding-right: 17px;
+}
+.shape-1 .caption{ /*надпись "Поиск по автомобилю"*/
+  color: #154468;
+  font-size: 12px;
+  font-weight: 900;
+  }
+.shape-1 .search{ /*ссылка "поиск"*/
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+.shape-1 #sel-mini{ /*одна хитрожопая маленькая выпадающая форма*/
+  width: 56px;
+}
+.shape-1 .sel{ /* 4 выпадющих формочки*/
+  width: 100px;
+  padding: 3px 0;
+  margin-top: 6px;
+}
+
+.shape-1 .column-1{ /*выпадющие формы и подписи к ним. This block сontains .column-with-text and .column-with-select */
+  width: 206px;
+  font-size: 10px;
+}
+.shape-1 .column-with-text{ /*колонка подписей к выпадающим формам*/
+  width: 70px;
+  position: absolute;
+  top: 26px;
+  left: 17px;
+}
+.shape-1 .column-with-text p{ /*шрифты для колонки подписей к выпадающим формам*/
+  padding: 4px 0;
+  line-height: 10px;
+  font-family: "Lucida Sans Regular";
+}
+.car{ /*выделение слов "автомобили" другим цветом*/
+color: #77858b;
+font-size: 9px;
+}
+
+.shape-1 .column-with-select{ /*колонка с выпадающими формами*/
+  width: 105px;
+  position: absolute;
+  top: 19px;
+  left: 93px;
+}
+
+/*---------вторая суб-колонка с выпадающими формами и подписями---------*/
+
+.shape-1 .column-with-select-2{ /*колонка с выпадающими формами*/
+  width: 105px;
+  position: absolute;
+  top: 19px;
+  left: 300px;
+}
+.shape-1 .column-with-text-2{ /*колонка подписей к выпадающим формам*/
+  width: 70px;
+  position: absolute;
+  top: 26px;
+  left: 217px;
+}
+.shape-1 .column-with-text-2 p{ /*шрифты для колонки подписей к выпадающим формам*/
+  padding: 4px 0;
+  line-height: 10px;
+  font-size: 10px;
+  font-family: "Lucida Sans Regular";
+}
+
+/*SHAPE-2*/
+.shape-2{
+  width: 190px;
+  height: 132px;
+  border: 1px solid #b8b8b9;
+  border-radius: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 11px;
+  left: 430px;
+  box-shadow:3px 3px 10px gray;
+}
+.shape-2 span{ шрифты для колонки подписей к выпадающим формам*/
+  padding: 4px 0;
+  line-height: 10px;
+  font-size: 10px;
+  font-family: "Lucida Sans Regular";
+}
+.selection-block-season p{
+  line-height: 10px;
+  font-size: 10px;
+  font-family: "Lucida Sans Regular";
+}
+.shape-2 .caption{ /*надпись "поиск шин"*/
+  color: #154468;
+  font-size: 12px;
+  font-weight: 900;
+  margin-left: 13px;
+  }
+.selection-block-11{ /*отступ буквы R*/
+  margin-left: 46px;
+  margin-top: 5px;
+}
+.shape-2 .size{
+  margin-left: 16px; /*отступ первой строки*/
+}
+.shape-2 .search{ /*ссылка "поиск"*/
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+.season-word{
+  margin-left: 17px;
+  margin-top: 5px;
+}
+.season-box{
+  position: absolute;
+  left: 56px;
+  top: 65px;
+  font-size: 10px;
+}
+
+/*SHAPE-3*/
+.shape-3{
+  width: 260px;
+  height: 132px;
+  border: 1px solid #b8b8b9;
+  border-radius: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 11px;
+  left: 635px;
+  box-shadow:3px 3px 10px gray;
+}
+.shape-3 .caption{ /*надпись-заголовок "поиск дисков"*/
+  color: #154468;
+  font-size: 12px;
+  font-weight: 900;
+  margin-left: 13px;
+  }
+.disc-searching{ /*первый блок-колонка в shape-3, поиск шин*/
+font-size: 10px;
+width: 150px;
+height: 92px;
+position: absolute;
+top: 10px;
+left: 10px;
+padding: 0 3px;
+border-right: 1px solid #bdc6ca;
+}
+.column-with-text-shape-3{ /*блок с подписями к select*/
+  width: 85px;
+  height: 91px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+.column-with-text-shape-3 p { /*отступы между строчками, шрифт в подписях к select*/
+  padding: 3px 0;
+  line-height: 9px;
+  color: #77858b;
+  font-family: "Lucida Sans Regular";
+}
+.column-with-text-shape-3 .firs-word{ /*цвет и размер первого слова в подписях к select*/
+  font-size: 10px;
+  color: #000;
+}
+.column-with-select-shape-3{ /*блок-колонка с select*/
+  width: 65px;
+  height: 91px;
+  position: absolute;
+  top: 6px;
+  left: 95px;
+}
+.sel-12, .sel-13, .sel-14{ /*отступ margin между select*/
+  margin-top: 9px;
+}
+.dco{ /*второй блок-колонка в shape-3*/
+  font-size: 8px;
+  color: #77858b;
+  width: 65px;
+  height: 92px;
+  position: absolute;
+  top: 4px;
+  left: 180px;
+}
+.dco p{ /*описание к select - ДЦО(диаметр центрального отверстия) и ET(вылет диска):  */
+  padding: 2px 0;
+  font-family: "Lucida Sans Regular";
+  font-size: 9px;
+  line-height: 7px;
+}
+.dco p:nth-child(1),
+.dco p:nth-child(4){ /*выделяем слова ДЦО и ET*/
+  font-size: 10px;
+  color: #000;
+}
+.dco .sel-15{ /*отступ одного select - ET(вылет диска)*/
+  margin-bottom: 7px;;
+}
+
+/*LEFT, RIGHT sides, CONTENT*/
+.left-side{
+  float: left;
+  width: 185px;
+  /*overflow: hidden;*/
+}
+.left-side-captions{ /*заголовки списков слева: Каталог продукции, шины, диски, болты*/
+  border: 1px solid #79878d;
+  border-radius: 15px;
+  line-height: 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.left-side-captions span{
+  margin-left: 30px;
+  font-size: 13px;
+}
+.left-side-captions img{
+  position: absolute;
+  left: 4px;
+  top: 1px;
+}
+.left-side-captions:first-child{ /*каталог продукции*/
+  margin-bottom: 12px;
+  box-shadow:0px 3px 5px #969696;
+  font-size: 12px;
+}
+.left-side ul{
+  list-style-type: circle;
+  margin-left: 40px;
+
+}
+.left-side ul li a{
+  color: #465961;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 25px;
+}
+.left-side li:hover{
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0c3256;
+  transition: all 0.1s;
+}
+
+
+/*CONTENT-TABLE*/
+.content{
+  position: relative;
+  width: 525px;
+  height: 627px;
+  left: 190px;
+  border-radius: 3px;
+  background: #e5e7e8;
+  background: -moz-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e5e7e8), color-stop(100%, #93a7b0));
+  background: -webkit-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+  background: -o-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+  background: -ms-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+  background: linear-gradient(to bottom, #e5e7e8 0%, #93a7b0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0', GradientType=0 );
+}
+/*.full-product-info{
+  float: left;
+  margin-left: 0px;
+}*/
+.content-table{
+  margin-left: -90px;
+}
+
+
+
+/*RIGHT SIDE*/
+.right-side{
+  position: relative;
+  right: 0px;
+  top: 0px;
+}
+
+/*FOOTER*/
+footer{
+  float: right;
+}
+footer li{
+  list-style: none;
+  float: left;
+  margin: auto 10px;
+}
+.shape-3 .search{ /*ссылка "поиск"*/
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
