@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot');
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-condensedregular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  /*background: url(../img/header.jpg);*/
+  /*background-position: top;*/
+  /*background-repeat: no-repeat;*/
+  /*width: 100%;*/
+  /*position: absolute;*/
+  /*margin: auto;*/
+  /*overflow: hidden;*/
+  background: url(../img/header.jpg) 50% 0 no-repeat;
+  height: 515px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.logo{
+  margin-top: 40px;
+  letter-spacing: 5px;
+
+}
+.logotype{
+  font-family: "LeagueGothic", Arial, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+  /*letter-spacing: 0.1rem;*/
+  text-decoration: none;
+  /*display: block;*/
+}
+.logotype__er{
+  line-height: 100%;
+  background: linear-gradient(#855f94, #33263a);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+/*------TOP MENU------*/
+.menu{
+  /*border: 1px solid #000;*/
+  /*border-radius: 15px;*/
+  display: inline-block;
+  /*background-color: #3f3247;*/
+  /*padding: 0 2rem;*/
+  /*width: auto;*/
+  /*height: auto;*/
+}
+.menu__list{
+
+}
+.menu__item{
+  list-style: none;
+}
+.menu__link{
+  text-decoration: none;
+  color: #fff;
+  font-family: "LeagueGothic", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.menu__link:hover{
+  border-bottom: 2px solid #edbfff;
+}
+.menu__list_submenu{
+  display: none;
+}
+.menu__item:hover .menu__list_submenu{
+  display: block;
+}
+
+/*------SLIDER------*/
+.slider{
+  width: 320px;
+  margin: auto;
+  /*margin-bottom: 20px;*/
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  margin-left: -160px;
+  /*border: 1px solid black;*/
+}
+.slider__head{
+  font-size: 3rem;
+  font-family: "LeagueGothic", Arial, sans-serif;
+  color: #fff;
+  text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
+  font-weight: 100;
+}
+.slider__text{
+  font-weight: 100;
+  font-size: 2rem;
+  font-family: "LeagueGothic", Arial, sans-serif;
+  color: #edbfff;
+  text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
+}
+.left-arrow{
+  width: 38px;
+  height: 72px;
+  background: url(../img/left-arrow.png) 0px -5px no-repeat;
+  float: left;
+  margin-top: 20px;
+  /*position: absolute;*/
+  /*left: -60px;*/
+  /*top: 20px;*/
+}
+.left-arrow:hover{
+  background: url('../img/left-arrow.png') -50px -5px no-repeat;
+}
+.right-arrow{
+  width: 38px;
+  height: 72px;
+  background: url('../img/right-arrow.png') 0px -5px no-repeat;
+  float: right;
+  margin-top: 20px;
+  /*position: absolute;*/
+  /*left: 231px;*/
+  /*top: 20px;*/
+}
+.right-arrow:hover{
+  background: url('../img/right-arrow.png') -50px -5px no-repeat;
+}
+/*------STYLIZED RADIO BUTTON------*/
+/* Скрываем системный контрол */
+/*input[type="radio"] {
+	display: none;
+}
+label.for-radio span {
+	background: url('../img/sprite_sliders.png') no-repeat;
+	padding-left: 26px;		/* Ширина картинки + пара пикселей отступа от нее до текста
+	line-height: 24px;
+	height: 24px;
+	display: block;
+}
+/* Смещения для невыбранной и выбранной радиокнопки
+label.for-radio input[type="radio"] + span {
+	background-position: top left;
+}
+label.for-radio input[type="radio"]:checked + span {
+	background-position: bottom left;
+}*/
+.dotnav{
+/*width: 200px;*/
+/*height: 20px;*/
+/*position: absolute;*/
+/*left: 900px;*/
+}
+.dotnav__list{
+  list-style: none;
+}
+.dotnav__item{
+  display: inline-block;
+}
+.dotnav__link{
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+.dotnav__item{
+  width: 17px;
+  height: 17px;
+  background-color: rgba(178, 178, 178, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.dotnav__link:hover{
+  background: rgba(255,255,255,1);
+/* Old Browsers */background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(179,179,179,1) 49%, rgba(179,179,179,1) 100%);
+ /* FF3.6+ */background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(43%, rgba(255,255,255,1)), color-stop(49%, rgba(179,179,179,1)), color-stop(100%, rgba(179,179,179,1)));
+/* Chrome, Safari4+ */background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(179,179,179,1) 49%, rgba(179,179,179,1) 100%);
+ /* Chrome10+,Safari5.1+ */background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(179,179,179,1) 49%, rgba(179,179,179,1) 100%);
+ /* Opera 11.10+ */background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(179,179,179,1) 49%, rgba(179,179,179,1) 100%);
+ /* IE 10+ */background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 43%, rgba(179,179,179,1) 49%, rgba(179,179,179,1) 100%);
+/* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b3b3b3', GradientType=1 );
+/* IE6-9 fallback on horizontal gradient */
+border-radius: 50%;
+}
+/*------GRADIENT AREA------*/
+.gradient_area{
+  background: linear-gradient(#755183, #36293e);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+  /*height: 500px;*/
+  /*position: absolute;*/
+  /*top: 515px;*/
+  /*clear: both;*/
+}
+.news{
+  width: 260px;
+  margin: auto;
+  padding: 10px 0;
+  /*display: block;*/
+  /*position: absolute;*/
+}
+.news__sprite1{
+  background: url('../img/sprite_shapes-icons3.png') -4px -11px no-repeat;
+  margin: 14px 8px;
+  float: left;
+  width: 26px;
+  height: 26px;
+}
+.news__sprite2{
+  background: url('../img/sprite_shapes-icons3.png') -41px -11px no-repeat;
+  margin: 14px 8px;
+  float: left;
+  width: 26px;
+  height: 26px;
+}
+.news__sprite3{
+  background: url('../img/sprite_shapes-icons3.png') -78px -12px no-repeat;
+  margin: 14px 8px;
+  float: left;
+  width: 26px;
+  height: 26px;
+}
+
+.news__head{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "LeagueGothic", Arial, sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+  margin-left: 20%;
+}
+.news__text{
+  text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+  font-family: "OpenSansLight", Arial, sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  margin-left: 20%;
+}
+.news__more{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "LeagueGothic", Arial, sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+  margin-left: 0px;
+  float: right;
+}
+.news__more:hover{
+  text-shadow: 0px 0px 14px #fff;
+}
