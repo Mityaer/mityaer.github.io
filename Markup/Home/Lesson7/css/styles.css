@@ -50,32 +50,31 @@ header{
   /*position: absolute;*/
   /*margin: auto;*/
   /*overflow: hidden;*/
+  text-align: center;
   background: url(../img/header.jpg) 50% 0 no-repeat;
   height: 515px;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
 .logo{
   margin-top: 40px;
-  letter-spacing: 5px;
-
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
 }
 .logotype{
   font-family: "AntonioLight", Arial, sans-serif;
-  /*font-weight: 900;*/
-  /*text-transform: uppercase;*/
+  text-decoration: none;
   font-size: 2rem;
   color: #fff;
-  /*text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);*/
-  text-decoration: none;
+  /*text-transform: uppercase;*/
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 .logotype__er{
-  line-height: 100%;
   /*background: linear-gradient(#855f94, #33263a);*/
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  /*-webkit-background-clip: text;*/
+  /*-moz-background-clip: text;*/
+  /*background-clip: text;*/
   color: #855f94;
   text-shadow: none;
 }
@@ -119,9 +118,10 @@ header{
   margin: auto;
   /*margin-bottom: 20px;*/
   position: absolute;
-  top: 380px;
+  top: 300px;
   left: 50%;
   margin-left: -160px;
+  text-align: center;
   /*border: 1px solid black;*/
 }
 .slider__head{
@@ -188,6 +188,7 @@ label.for-radio input[type="radio"]:checked + span {
 /*height: 20px;*/
 /*position: absolute;*/
 /*left: 900px;*/
+  margin-top: 30px;
 }
 .dotnav__list{
   list-style: none;
@@ -335,6 +336,9 @@ label.for-radio input[type="radio"]:checked + span {
   text-align: left;
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 1rem;
+}
+.dotnav--white{
+
 }
 .dotnav--white .dotnav__item{
   background-color: rgba(255, 255, 255, 0.8);
