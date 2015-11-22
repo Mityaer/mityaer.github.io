@@ -9,24 +9,6 @@
     font-weight: normal;
     font-style: normal;
 }
-/*@font-face {
-    font-family: 'LeagueGothic';
-    src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
-/*@font-face{
-  font-family: 'LeagueGothic';
-  src: url("../fonts/LeagueGothic-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}*/
 @font-face {
     font-family: 'AntonioLight';
     src: url('../fonts/antonio-light-webfont.eot');
@@ -41,6 +23,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 header{
   /*background: url(../img/header.jpg);*/
@@ -83,6 +66,7 @@ header{
   /*border: 1px solid #000;*/
   /*border-radius: 15px;*/
   display: inline-block;
+  border: 1px solid transparent;
   /*background-color: #3f3247;*/
   /*padding: 0 2rem;*/
   /*width: auto;*/
@@ -106,7 +90,7 @@ header{
   border-bottom: 2px solid #edbfff;
 }
 .menu__list_submenu{
-  display: none;
+  /*display: none;*/
 }
 .menu__item:hover .menu__list_submenu{
   display: block;
@@ -482,4 +466,44 @@ footer{
 .designed__company-name{
   display: inline;
   font-size: 0.8rem;
+}
+/*==========  Mobile First Method  ==========*/
+@media /*only*/ screen and (min-width : 320px) {
+.menu{
+  width: 253px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: rgba(72,58,78,.8);
+  z-index: 2;
+  position: relative;
+}
+.menu__item{
+  /*line-height: 2.7rem;*/
+  /*border-bottom: 1px solid #000;*/
+  border-top: 1px solid #4f3d57;
+  border-radius: 5px;
+}
+.menu__link{
+  line-height: 2.5rem;
+  display: block;
+  border-top: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.menu__link:hover{
+  border-top: 1px solid #4f3d57;
+  border-bottom: 2px solid rgba(237,191,255,.8);
+  background-color: rgba(38,29,43,.8);
+  border-radius: 3px;
+}
+.menu__item:hover{
+}
+}
+/*=============480px=============*/
+@media /*only*/ screen and (min-width : 480px) {
+}
+/*=============768px=============*/
+@media /*only*/ screen and (min-width : 768px) {
+}
+/*=============960px=============*/
+@media /*only*/ screen and (min-width : 960px) {
 }
