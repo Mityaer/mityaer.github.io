@@ -1,0 +1,192 @@
+/*=============from 768px to 960px=============*/
+@media /*only*/ screen and (min-width : 769px) {
+html {
+  font-size: 1.125rem;
+}
+header{
+  background: url(../img/header.jpg) 50% 0 no-repeat;
+  height: 800px;
+}
+.logo{
+  margin-top: 90px;
+  margin-left: 20px;
+  text-align: left;
+  }
+.menu{
+  border: 1px solid transparent;
+  width: 100%;
+  background: none;
+  border: none;
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  left: 20px;
+  top: 15px;
+}
+.menu__list{
+  float: left;
+}
+.menu__item{
+  border: none;
+  padding: 0px 10px;
+}
+.menu__link{
+  text-decoration: none;
+  color: #fff;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.menu__link:hover{
+  border-radius: 0px;
+  border-bottom: 2px solid #edbfff;
+  text-shadow: 0px 0px 12px #fff;
+  background: none;
+}
+.menu__list_submenu{
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+.menu__item:hover .menu__list_submenu{
+  /*display: block;*/
+  background: none;
+  display: flex;
+}
+.menu__link:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 2px solid #edbfff;
+}
+.slider__overflow{
+  top: 240px;
+  height: 400px;
+  position: absolute;
+}
+.slider__head{
+  font-size: 2.125rem;
+  text-align: left;
+}
+.slider__text{
+  font-size: 1.125rem;
+  text-align: left;
+}
+.slider__text_min_480{
+  display: inline;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "OpenSansLight", Arial, sans-serif;
+  text-align: left;
+  margin-left: 15%;
+  max-width: 35%;
+  max-height: 4.5rem;
+  overflow: hidden;
+  position: absolute;
+  line-height: 1.125rem;
+}
+.dotnav{
+  top: 325px;
+  margin-top: 30px;
+}
+.slider__iphone{
+  background: url(../img/iphone_big.png) 0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 210px;
+}
+.left-arrow{
+  /*margin-left: 10px;*/
+}
+.right-arrow{
+  /*margin-right: 10px;*/
+}
+.gradient_area{
+  display: flex;
+}
+.news{
+  max-width: 140px;
+  max-width: 222px;
+  padding: 0px 0;
+  /*margin: 0 0 0 0 ;*/
+}
+.news__text{
+  max-height: 6.75rem;
+  line-height: 1.125rem;
+  margin-bottom: 20px;
+}
+.updates__link-more {
+  left: 256px;
+}
+.content{
+  height: 600px;
+}
+.articles{
+  width: 320px;
+}
+.articles__text{
+  max-width: 65%;
+}
+.updates{
+  margin-left: auto;
+  min-width: 40%;
+  left: 0%;
+  top: -40px;
+}
+.dotnav--white {
+  margin-left: 140px;
+  margin-top: 30px;
+  position: absolute;
+  left: 0px;
+}
+.sponsors-list{
+  width: 700px;
+  margin-left: -350px;
+}
+.menu--footer{
+  display: flex;
+}
+.menu--footer .menu__list{
+  margin-top: 0px;
+}
+.menu--footer .menu__link{
+  border-top: 1px solid transparent;
+  margin: 50px 20px;
+}
+.designed{
+  margin-top: 0px;
+  float: right;
+  margin-right: 100px;
+  /*margin-right: 1%;*/
+}
+footer{
+  text-align: none;
+  vertical-align: middle;
+}
+/*========PRE-FOOTER AREA========*/
+.pre-footer{
+  display: flex;
+  height: 395px;
+}
+.pre-footer__box{
+  max-width: 200px;
+  height: 222px;
+  top: 0px;
+  left: 2%;
+  display: inline-block;
+  margin: auto;
+}
+.pre-footer__head{
+  font-size: 1.5rem;
+}
+.pre-footer__text{
+  min-width: 80%;
+  max-width: 90%;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  height: 8.75rem;
+  overflow: hidden;
+}
+} /*the end of meda queries*/

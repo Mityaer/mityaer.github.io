@@ -1,0 +1,88 @@
+
+/*=============from 960px to infinity=============*/
+@media /*only*/ screen and (min-width : 960px) {
+html {
+  font-size: 1.25rem;
+}
+.slider__head{
+  margin-left: 50px;
+}
+.slider__text{
+  margin-left: 50px;
+}
+.slider__text_min_480 {
+  margin-left: 50px;
+  max-width: 42%;
+  max-height: 4.5rem;
+  line-height: 1.125rem;
+}
+.menu{
+  display: none;
+}
+.menu--960px{
+  width: 500px;
+  display: inline-block;
+}
+.menu--960px .menu__list{
+  width: 611px;
+  right: 10%;
+  position: absolute;
+  top: 74px;
+}
+.menu--960px .menu__link{
+  float: left;
+  margin: 0px 20px;
+}
+.logo {
+  margin-top: 63px;
+  margin-left: 10%;
+}
+.news {
+  max-width: 382px;
+}
+.articles {
+  min-width: 50%
+}
+.articles__text {
+  max-width: 89%;
+}
+.updates {
+  top: 0px;
+  left: 3%;
+  min-width: 150px;
+}
+.dotnav--white {
+    margin-left: 140px;
+    margin-top: 30px;
+    position: absolute;
+    left: 0px;
+}
+.dotnav--white {
+    margin-left: px;
+    left: 11%;
+    margin-top: 30px;
+    position: absolute;
+}
+.pre-footer__box {
+  max-width: 360px;
+}
+.pre-footer__text{
+  height: 7.5rem;
+}
+/*.menu--footer{
+  display: flex;
+}*/
+.menu--footer .menu__link {
+  border-top: 1px solid transparent;
+  margin: 88px 25px;
+}
+
+/*footer{
+  display: flex;
+}*/
+.designed {
+  margin-top: -123px;
+  margin-right: 10%;
+}
+
+} /*the end of meda queries*/

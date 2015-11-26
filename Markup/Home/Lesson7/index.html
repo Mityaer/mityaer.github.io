@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Homework-7</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Homework-7-8-9</title>
+  <link rel="stylesheet" href="css/styles_320-480.css">
+  <link rel="stylesheet" href="css/styles_480-768.css">
+  <link rel="stylesheet" href="css/styles_768-960.css">
+  <link rel="stylesheet" href="css/styles_960-infinity.css">
 </head>
 <body>
+<div class="wrapper">
   <header>
     <h1 class="logo"><a class="logotype" href="index.html">PINGBULL<span class="logotype__er">ER</span></a></h1>
     <nav class="menu">
@@ -21,6 +25,18 @@
       </li>
     </ul>
     </nav>
+<!-- MENU WITHOUT SUBMENU -->
+    <nav class="menu--960px">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#">home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">about</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">products</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">lorem ipsum</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">dolor sit amet</a></li>
+      </ul>
+    </nav>
+
     <div class="slider__overflow"></div>
     <div class="slider__iphone"></div>
       <section class="slider">
@@ -38,20 +54,6 @@
           </ul>
         </nav>
       </section>
-
-<!-- STYLIZED RADIO BUTTON -->
-    <!-- <label for="windows" class="for-radio">
-      <input type="radio" name="os" value="windows" id="windows" checked="checked" />
-      <span>TEST Radio1</span>
-    </label>
-    <label for="linux" class="for-radio">
-      <input type="radio" name="os" value="linux" id="linux"/>
-      <span>TEST Radio2</span>
-    </label>
-    <label for="macosx" class="for-radio">
-      <input type="radio" name="os" value="macosx" id="macosx"/>
-      <span>TEST Radio3</span>
-    </label> -->
   </header>
 <!-- GRADIENT AREA -->
   <section class="gradient_area">
@@ -83,7 +85,6 @@
           <h3 class="articles__header">starts here</h3>
         </figcaption>
         <p class="articles__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
-      </figure>
       <nav class="dotnav--white">
         <ul class="dotnav__list">
           <li class="dotnav__item"><a href="#" class="dotnav__link"></a></li>
@@ -92,42 +93,68 @@
           <li class="dotnav__item"><a href="#" class="dotnav__link"></a></li>
         </ul>
       </nav>
+      </figure>
 <!-- UPDATES -->
     <figure class="updates">
       <figcaption><h3 class="updates__main-article">Recent updates</h3></figcaption>
       <article class="updates__box-list">
         <div class="bokeh__item1"></div>
-        <h4 class="updates__header">Nunc turpis neque</h4>
-        <p class="updates__text">Posted by Admin on March 13</p>
+        <h4 class="updates__header">Nunc turpis neque feugiat eget</h4>
+        <p class="updates__text">Posted by Admin on March 13 2012</p>
       </article>
       <article class="updates__box-list">
         <div class="bokeh__item2"></div>
-        <h4 class="updates__header">Nunc turpis neque</h4>
-        <p class="updates__text">Posted by Admin on March 13</p>
+        <h4 class="updates__header">Nunc turpis neque feugiat eget</h4>
+        <p class="updates__text">Posted by Admin on March 13 2012</p>
       </article>
       <article class="updates__box-list">
         <div class="bokeh__item3"></div>
-        <h4 class="updates__header">Nunc turpis neque</h4>
-        <p class="updates__text">Posted by Admin on March 13</p>
+        <h4 class="updates__header">Nunc turpis neque feugiat eget</h4>
+        <p class="updates__text">Posted by Admin on March 13 2012</p>
       </article>
         <a class="updates__link-more" href="#">more blog posts</a>
     </figure>
     <!-- SPONSORS -->
     <div class="line-between-content-and-sponsors-list"></div>
-    <ul class="sponsors-list">
-      <li class="sponsors-list__item sponsor1"></li>
-      <li class="sponsors-list__item sponsor2"></li>
-      <li class="sponsors-list__item sponsor3"></li>
-      <li class="sponsors-list__item sponsor4"></li>
-      <li class="sponsors-list__item sponsor5"></li>
-      <li class="sponsors-list__item sponsor6"></li>
-    </ul>
+    <div class="sponsors-list">
+      <img class="sponsors-list__item" src="img/SponsorLogo-1.png" alt="Sponsor Logo-1">
+      <img class="sponsors-list__item" src="img/SponsorLogo-2.png" alt="Sponsor Logo-2">
+      <img class="sponsors-list__item" src="img/SponsorLogo-3.png" alt="Sponsor Logo-3">
+      <img class="sponsors-list__item" src="img/SponsorLogo-4.png" alt="Sponsor Logo-4">
+      <img class="sponsors-list__item" src="img/SponsorLogo-5.png" alt="Sponsor Logo-5">
+      <img class="sponsors-list__item" src="img/SponsorLogo-6.png" alt="Sponsor Logo-6">
+    </div>
   </main>
-<footer>
-  <section class="designed">
-    <p class="designed__text">Designed by</p>
-    <h1 class="designed__company-name">Pingbull AS</h1>
+<!-- ========PRE-FOOTER AREA======== -->
+  <section class="pre-footer">
+    <figure class="pre-footer__box">
+      <h3 class="pre-footer__head">New categories</h3>
+      <p class="pre-footer__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+    </figure>
+    <figure class="pre-footer__box">
+      <h3 class="pre-footer__head">New categories</h3>
+      <p class="pre-footer__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+    </figure>
+    <figure class="pre-footer__box">
+      <h3 class="pre-footer__head">New categories</h3>
+      <p class="pre-footer__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+    </figure>
   </section>
-</footer>
+<!-- ========FOOTER======== -->
+  <footer>
+    <nav class="menu--footer">
+        <a class="menu__link" href="#">home</a>
+        <a class="menu__link" href="#">about</a>
+        <a class="menu__link" href="#">blog</a>
+        <a class="menu__link" href="#">products</a>
+        <a class="menu__link" href="#">lorem ipsum</a>
+        <a class="menu__link" href="#">dolor sit amet</a>
+    </nav>
+    <section class="designed">
+      <p class="designed__text">Designed by</p>
+      <h1 class="designed__company-name">Pingbull AS</h1>
+    </section>
+  </footer>
+</div>
 </body>
 </html>
