@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leonid</title>
+</head>
+
+<body>
+
+<style>
+#menu.default{
+  background-color: #B4B4B4;
+  position: fixed;
+  width: 100%;
+  height: 74px;
+  left: 0px;
+  top: 49px;
+  display: none;
+  /*transition: all 1s;*/
+}
+#menu.fixed{
+  display: block;
+  /*transition: all 1s;*/
+}
+.img-phone{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  left: 50%;
+  margin-left: -423px;
+  z-index: inherit;
+  display: inherit;
+}
+.phone-numbers{
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  /* line-height: 0.9rem; */
+  position: absolute;
+  top: 50%;
+  margin-top: -23px;
+  left: 50%;
+  margin-left: -368px;
+  z-index: inherit;
+  display: inherit;
+ }
+.img-vehicle{
+  width: 72px;
+  height: 47px;
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  left: 50%;
+  margin-left: -125px;
+  z-index: inherit;
+  display: inherit;
+}
+.delivery{
+  position: absolute;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  top: 50%;
+  margin-top: 18px;
+  left: 50%;
+  margin-left: -147px;
+  z-index: inherit;
+  display: inherit;
+}
+.order-now{
+  position: absolute;
+  width: 390px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 43px;
+  color: #fff;
+  background-color: #F7350F;
+  font-weight: 600;
+  font-family: Helvetica, Arial, sans-serif;
+  top: 50%;
+  margin-top: -24px;
+  left: 50%;
+  margin-left: 44px;
+  z-index: inherit;
+  display: inherit;
+}
+.order-now:hover{
+  background-color: #FF0505;
+  cursor: pointer;
+}
+.transbg {
+  background-color: rgba(180, 180, 180, 0.7)!important;
+}
+</style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var $menu = $("#menu");
+    /* $(window).scroll(function(){
+        if ($(this).scrollTop() > 100 && $menu.hasClass("default") ){
+          $menu.fadeOut('fast',function(){
+            $(this).removeClass("default")
+              .addClass("fixed transbg")
+              .fadeIn('fast');
+            });
+        } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+            $menu.fadeOut('fast',function(){
+            $(this).removeClass("fixed transbg")
+               .addClass("default")
+               .fadeIn('fast');
+        });
+      }
+    }); //scroll */
+    $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+      $('#menu').addClass('fixed');
+  } else {
+      $('#menu').removeClass('fixed');
+  }
+  });
+
+$menu.hover(
+    function(){
+        if( $(this).hasClass('fixed') ){
+            $(this).removeClass('transbg');
+        }
+    },
+    function(){
+        if( $(this).hasClass('fixed') ){
+            $(this).addClass('transbg');
+        }
+    });//hover
+  });//jQuery
+  </script>
+
+
+  <div id="menu" class="default">
+    <img class="img-phone" src="http://lpmotor1.r.worldssl.net/files/a/a/6/aa6afcf3589469a7a8eca70bc723a921.png">
+    <div class="phone-numbers">
+      <p>(066) 689-23-54</p>
+      <p>(096) 484-62-61</p>
+    </div>
+    <img class="img-vehicle" src="http://lpmotor1.r.worldssl.net/files/8/a/c/8ac1a146bedfa3abeb57c0a53a6e18d1.png">
+    <span class="delivery">Доставка бесплатно!</span>
+    <button type="button" class="order-now" name="account">Закажите сейчас и получите подарок</button>
+  </div>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+    <p>String row...</p>
+</body>
+</html>
