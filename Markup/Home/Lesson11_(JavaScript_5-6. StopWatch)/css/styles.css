@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: #FF4A01;
+}
+
+.milliseconds{
+  font-size: 4rem;
+}
+
+.watch-header{
+  font-size: 2rem;
+}
+.watch{
+  font-size: 2rem;
+}
+
+.StopwatchDisplayBox {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 3%;
+}
+#timer, #ms{
+  font-size: 6rem;
+  text-align: center;
+  color: #FF4A01;
+  font-weight: 900;
+}
+.button {
+  display: inline-block;
+  font-family: tahoma,arial;
+  color: #fff;
+  /*border-radius: 50px;*/
+  /*background-color: #EB6900;*/
+  width: 400px;
+  font-size: 4rem;
+  line-height: 4rem;
+  height: 70px;
+  margin: 20px 20px;
+  border: none;
+  /*background: #3498db;*/
+  background-image: -webkit-linear-gradient(top, #3498db, #005B9C);
+  background-image: -moz-linear-gradient(top, #3498db, #005B9C);
+  background-image: -ms-linear-gradient(top, #3498db, #005B9C);
+  background-image: -o-linear-gradient(top, #3498db, #005B9C);
+  background-image: linear-gradient(to bottom, #3498db, #005B9C);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  outline: none;
+}
+
+.button:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+
+.button:active{
+  -webkit-box-shadow: inset 0px 0px 13px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 13px 2px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 13px 2px rgba(0,0,0,0.75);
+}
