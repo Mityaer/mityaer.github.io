@@ -4,11 +4,12 @@
   margin: auto;
   max-width: 960px;
   background: #ddd;
+  height: 500px;
+  border-radius: 10px;
+  position: relative;
   /* position: absolute; */
   /* left: 50%; */
   /* margin-left: -480px; */
-  border-radius: 10px;
-  position: relative;
 }
 .tabs__caption{
   height: 50px;
@@ -49,28 +50,41 @@
   /*height: 37px;*/
 }
 .tabs__content{
+  left: 20px;
   border-radius: 9px;
-  /* border-bottom: 5px solid darkcyan; */
   font-family: sans-serif;
   font-size: 0.8rem;
-  /* margin-left: 1em; */
   max-width: 91.5%;
-  display: none;
-  /* border: 8px solid darkcyan; */
-  padding: 1px 18px;
-  margin: auto;
+  /* display: none; */
+  opacity: 0;
+  transition: all 1s;
+  padding: 5px 18px;
+  /* margin: auto; */
   background-color: darkcyan;
   color: #fff;
+  position: absolute;
+  /* border-bottom: 5px solid darkcyan; */
+  /* margin-left: 1em; */
+  /* border: 8px solid darkcyan; */
 }
+.tabs__content::after{
+
+}
+
 .tabs__content.active{
-  display: block;
+  /*display: block;*/
+  opacity: 1;
 }
 /*--tabs ends*/
 
 /*--form*/
+.login_form{
+  position: relative;
+  top: 220px;
+}
 .field{
   padding: 13px;
-  max-width: 900px;
+  max-width: 500px;
   margin: auto;
   border-radius: 10px;
   margin-top: 30px;
@@ -86,11 +100,13 @@
   position: absolute;
   left: 255px;
   color: darkgreen;
-  transition: all .1s;
-  margin-top: -120px;
+  transition: all .6s;
+  /*margin-top: -120px;*/
+  opacity: 0;
 }
 .hints.active{
-  margin-top: 0px;
+  /*margin-top: 0px;*/
+  opacity: 1;
 }
 .field div {
   padding: 10px;
@@ -109,7 +125,8 @@
 .button{
   /*position: absolute;*/
   /*left: 20px;*/
-  margin-left: 20px;
+  /*margin-left: 20px;*/
+  margin: auto;
   margin-top: 20px;
   width: 100px;
   height: 1.5rem;
