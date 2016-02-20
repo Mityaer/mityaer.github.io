@@ -1,0 +1,227 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/* LAYOUT STYLES */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+  /*font-weight: 400;*/
+  /*line-height: 1.5;
+  color: #666;*/
+  /*font-size: 15px;*/
+}
+
+header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  /* border-bottom: solid 1px #039CFF; */
+}
+
+header h1 {
+  width: 540px;
+  margin-top: 0px;
+  margin-bottom: 0.2em;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  /* letter-spacing: 1px; */
+}
+
+header h2 {
+  width: 540px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #9ddcff;
+  letter-spacing: 0;
+}
+
+.inner {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
+#main-content {
+    left: 50%;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    margin-left: -345px;
+    color: #09749c;
+    margin-bottom: 50px;
+    text-indent: 0px;
+    position: relative;
+    width: 690px;
+    font-size: 3em;
+    /* margin-top: -22px; */
+    /* font-size: 18px; */
+    /* left: -235px; */
+    /* float: left; */
+}
+
+a.button {
+  width: 134px;
+  height: 58px;
+  padding-top: 22px;
+  padding-left: 68px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #fff;
+}
+a.button small {
+  display: block;
+  font-size: 11px;
+}
+header a.button {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+/* COMMON STYLES */
+
+/* GENERAL ELEMENT TYPE STYLES */
+
+.cusom_sel {
+  margin: 5px 5px;
+}
+
+.form_wrap {
+  position: relative;
+  width: 100px;
+  top: 20px;
+}
+
+
+/*--------------------------Custom select*/
+input {
+    display: none;
+}
+input:checked + label {
+    background-position: 0-40px;
+}
+label {
+padding-left: 20px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAACgCAYAAAAM0kxuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUM0MjVDQjY1NzAwMTFFMzgxNzE4MzAyRjNFQTFDRjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUM0MjVDQjc1NzAwMTFFMzgxNzE4MzAyRjNFQTFDRjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxQzQyNUNCNDU3MDAxMUUzODE3MTgzMDJGM0VBMUNGMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxQzQyNUNCNTU3MDAxMUUzODE3MTgzMDJGM0VBMUNGMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrklmOIAAAe8SURBVHja7FpvbBNl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) no-repeat 0 0;
+}
+.cusom_sel{
+  margin: 40px 177px;
+}
+.custom_select_without_CSS{margin-top: 40px;margin-left: 177px;}
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.text-desript, .text-congr{
+  font-size: .9em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  padding: 10px;
+}
+.text-congr{
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 3em;
+  /*padding: 0 180px;*/
+}
+
+/*--------------------------Navigation Menu*/
+
+
+#nav {
+  z-index: 2;
+  height: 2em;
+  position: relative;
+  top: -14px;
+  background: #09749c;
+    /*height: 30px;
+    display: block;
+    padding: 10px 0;
+    width: 900px;
+   position: absolute;*/
+   /*width: 100%;*/
+}
+
+#nav li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+
+#nav li a {
+    background: #09749c;
+    color: #fff;
+    display:block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: arial, helvetica, verdana, tahoma;
+    font-size: .8em;
+ }
+
+#nav li a:hover {
+    background: #ff9c00;
+}
+
+
+#nav li ul {
+	background: #e1ddd3;
+	display: none;
+	width: 150px;
+	position: absolute;
+  list-style: none;
+}
+
+.shadow {
+    -moz-box-shadow: 0px 3px 7px 3px #a8a8a8;
+    -webkit-box-shadow: 0px 3px 7px 3px #a8a8a8;
+    -o-box-shadow: 0px 3px 7px 3px #a8a8a8;
+    box-shadow: 0px 3px 7px 3px #a8a8a8;
+}
+
+#nav li ul li {
+	width: 100%
+
+}
+
+#nav li ul > li:first-child {
+    border-top: 3px solid #ff9c00;
+}
+
+#nav li.current > a {
+	/*background: #ff9c00;*/
+}
+
+#nav li ul li ul{
+	right: -150px; top: 0;
+}
