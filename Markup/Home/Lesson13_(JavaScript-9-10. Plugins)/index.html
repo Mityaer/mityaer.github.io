@@ -7,13 +7,14 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jcarousel.transitions.css">
+    <link rel="stylesheet" href="stylesheets/chosen.css"><!-- coosen select -->
     <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
     <!-- <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/jcarousel.transitions.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/chosen.css"> <!-- coosen select -->
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/chosen.css"> -->
+
     <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.js"></script>
-    
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/plugin_initial.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
@@ -111,7 +112,7 @@
 
 
         <div class="Choosen-Custom-jQuery">
-          <p>Choosen Custom + jQuery:</p>
+          <p>Custom Select ("Choosen") + jQuery:</p>
             <select data-placeholder="Choose a Country..." class="chosen-select" style="width:350px;" tabindex="2">
               <option value=""></option>
               <option value="United States">United States</option>
@@ -369,16 +370,16 @@
         </div>
 
         <script type="text/javascript">
-        var config = {
-        '.chosen-select'           : {},
-        '.chosen-select-deselect'  : {allow_single_deselect:true},
-        '.chosen-select-no-single' : {disable_search_threshold:10},
-        '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-        '.chosen-select-width'     : {width:"95%"}
-        }
-        for (var selector in config) {
-        $(selector).chosen(config[selector]);
-        }
+          var config = {
+            '.chosen-select'           : {},
+            '.chosen-select-deselect'  : {allow_single_deselect:true},
+            '.chosen-select-no-single' : {disable_search_threshold:10},
+            '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+            '.chosen-select-width'     : {width:"95%"}
+          }
+          for (var selector in config) {
+            $(selector).chosen(config[selector]);
+          }
         </script>
 
 
@@ -395,9 +396,9 @@
       </div>
 
       <div class="cusom_sel">
-        <p class="text-desript">Custom Select without JS:</p>
+        <p class="text-desript">Custom Checkbox without JS:</p>
         <input type="checkbox" id="checkbox"/>
-        <label for="checkbox"> checkbox</label>
+        <label for="checkbox">Checkbox</label>
       </div>
 
       <!-- <p class="text-congr">Fuck yeah!!! Fucking piece of cake!!!!</p> -->

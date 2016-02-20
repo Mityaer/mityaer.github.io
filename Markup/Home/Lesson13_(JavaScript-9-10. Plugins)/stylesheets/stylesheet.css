@@ -103,7 +103,7 @@ header a.button {
 
 
 /*--------------------------Custom select*/
-input {
+.cusom_sel input {
     display: none;
 }
 input:checked + label {
